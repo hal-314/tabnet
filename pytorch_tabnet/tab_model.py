@@ -175,6 +175,8 @@ class TabModel(object):
         # load best models post training
         self.load_best_model()
 
+        return losses_train, losses_valid, metrics_train, metrics_valid
+
     def fit_epoch(self, train_dataloader, valid_dataloader):
         """
         Evaluates and updates network for one epoch.
