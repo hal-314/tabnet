@@ -1,17 +1,17 @@
 import setuptools
 
 requirements = [
-    "scipy",
-    "torch",
-    "numpy",
-    "tqdm",
-    "sklearn",
-    "matplotlib",
+    "scipy>=1.3.0",
+    "torch>=1.3.1",
+    "numpy>=1.17.2",
+    "tqdm>=4.36.1",
+    "sklearn>=0.21.0",
+    "matplotlib>=3.0.0",
     "IPython",
 ]
 
 setuptools.setup(
-    name="example-pkg-YOUR-USERNAME-HERE", # Replace with your own username
+    name="example-pkg-YOUR-USERNAME-HERE",  # Replace with your own username
     version="0.0.1",
     author="Example Author",
     author_email="author@example.com",
@@ -26,5 +26,5 @@ setuptools.setup(
         "Operating System :: OS Independent",
     ],
     python_requires='>=3.6',
-    install_requires = requirements,
+    install_requires=requirements,
 )
